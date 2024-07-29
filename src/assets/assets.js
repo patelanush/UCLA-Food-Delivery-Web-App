@@ -161,6 +161,8 @@ export const menu_list = [
     const categories = menu_list.map(menu => menu.menu_name);
     const getRandomCategory = (categories) => categories[Math.floor(Math.random() * categories.length)];
 
+
+
     export const food_list = foodListData.map((name, index) => ({   
         _id: (index + 1).toString(),
         name: name,
@@ -169,3 +171,6 @@ export const menu_list = [
         description: "UCLA's "+name + " is the best " + name + " in all of America's college dining halls.",
         category: getRandomCategory(categories)
     }));        
+
+
+   

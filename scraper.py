@@ -14,5 +14,5 @@ if response.status_code == 200:
     for item in menu_items:
         food_list.append(item.get_text(strip=True))
         
-with open('food_list.json', 'w') as f:
+with open('src/assets/food_list.json', 'w') as f:
         json.dump(food_list, f, indent=4)
