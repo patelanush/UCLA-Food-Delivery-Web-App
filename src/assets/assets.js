@@ -166,6 +166,6 @@ export const menu_list = [
         name: name,
         image: imageMapping[index + 1] || food_1,
         price: getRandomPrice(12,18),
-        description: "Food provides essential nutrients for overall health and well-being",
+        description: "UCLA's "+name + " is the best " + name + " in all of America's college dining halls.",
         category: getRandomCategory(categories)
     }));        

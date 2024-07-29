@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
         <img src={assets.logo} alt="" className="logo" />
-            <p>ASU is the best school in the world when it comes to food. Be sure to get yours using Fabolous Food Delivery.</p>
+            <p>UCLA is the best school in the world when it comes to food. Be sure to get yours using Fabolous Food Delivery.</p>
             <div className="footer-social-icons">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
