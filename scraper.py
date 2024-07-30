@@ -19,7 +19,7 @@ if response.status_code == 200:
         
         tag_img = item.find_next_sibling('img')
         
-        if tag_img and tag_img['alt'] in ['V', 'VG', 'AEGG']:
+        if tag_img and tag_img['alt'] in ['V', 'VG']:
             if 'v.png' in tag_img['src']:
                 food_tag = 'V'
             elif 'vg.png' in tag_img['src']:
