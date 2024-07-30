@@ -7,12 +7,6 @@ import search_icon from './search_icon.png'
 import menu_1 from './menu_1.png'
 import menu_2 from './menu_2.png'
 import menu_3 from './menu_3.png'
-import menu_4 from './menu_4.png'
-import menu_5 from './menu_5.png'
-import menu_6 from './menu_6.png'
-import menu_7 from './menu_7.png'
-import menu_8 from './menu_8.png'
-
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
 import food_3 from './food_3.png'
@@ -126,16 +120,23 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Vegan",
+        menu_name: "Vegetarian",
         menu_image: menu_1
     },
     {
-        menu_name: "Non-Vegan",
+        menu_name: "Non-Veg",
         menu_image: menu_2
     
-    }]
+    },
+    {
+        menu_name: "Vegan",
+        menu_image: menu_3
+    
+    }
 
-const categories = menu_list.map(menu => menu.menu_name);
+]
+
+const categories = ["Vegetarian", "Non-Veg", "Vegan"];
 const getRandomCategory = (categories) => categories[Math.floor(Math.random() * categories.length)];
 
 const imageKeys = Object.keys(imageMapping);
@@ -146,14 +147,14 @@ const getRandomImage = () => {
 };
 
 
+export const food_list = foodListData.map((item, index) => ({
 
-export const food_list = foodListData.map((name, index) => ({
     _id: (index + 1).toString(),
-    name: name,
+    name: item.name,
     image: imageMapping[index + 1] || getRandomImage(),
     price: getRandomPrice(12, 18),
-    description: "UCLA's " + name + " is the best " + name + " in all of America's college dining halls.",
-    category: getRandomCategory(categories)
+    description: "UCLA's " + item.name + " is the best " + item.nameç + " in all of America's college dining halls.",
+    category: item.tag === "VG" ? "Vegetarian" && "Vegan": item.tag === "V" ? "Vegetarian" : "Non-Veg"
 }));
 
 

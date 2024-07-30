@@ -1,36 +1,42 @@
 [
-    "Bacon",
-    "Pork Sausage",
-    "Scrambled Eggs",
-    "Bruin Scramble (Ham & Cheddar)",
-    "Bruin Scramble (Vegetarian)",
-    "Pancakes",
-    "Pancakes",
-    "Bruin Scramble (Vegetarian)",
-    "Bruin Scramble w/ Roasted Chicken",
-    "Bacon",
-    "Chicken Apple Sausage",
-    "Scrambled Eggs",
-    "Belgian Waffle",
-    "Pancakes",
-    "Cuban Style Pork",
-    "Cuban Style Vegetable Hash (Picadillo)",
-    "Cajun Chicken Wings",
-    "Cauliflower Al Pastor Taco",
-    "Smoked Chicken & Pesto Pizza",
-    "Cuban Style Pork",
-    "Cuban Style Vegetable Hash (Picadillo)",
-    "Garlic Cumin Chicken Wings",
-    "Cauliflower Al Pastor Taco",
-    "Smoked Chicken & Pesto Pizza",
-    "Bolognese Sauce",
-    "Linguine w/ Pesto",
-    "Country Fried Chicken",
-    "Macaroni & Cheese",
-    "Smoked Chicken & Pesto Pizza",
-    "Linguine w/ White Clam Sauce",
-    "Linguine w/ Pesto",
-    "Roast Chicken w/ Almond Mojo",
-    "Macaroni & Cheese",
-    "Smoked Chicken & Pesto Pizza"
+    {
+        "name": "Bolognese Sauce",
+        "tag": ""
+    },
+    {
+        "name": "Linguine w/ Pesto",
+        "tag": "V"
+    },
+    {
+        "name": "Country Fried Chicken",
+        "tag": ""
+    },
+    {
+        "name": "Macaroni & Cheese",
+        "tag": "V"
+    },
+    {
+        "name": "Smoked Chicken & Pesto Pizza",
+        "tag": ""
+    },
+    {
+        "name": "Linguine w/ White Clam Sauce",
+        "tag": ""
+    },
+    {
+        "name": "Linguine w/ Pesto",
+        "tag": "V"
+    },
+    {
+        "name": "Roast Chicken w/ Almond Mojo",
+        "tag": ""
+    },
+    {
+        "name": "Macaroni & Cheese",
+        "tag": "V"
+    },
+    {
+        "name": "Smoked Chicken & Pesto Pizza",
+        "tag": ""
+    }
 ]
