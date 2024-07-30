@@ -1,5 +1,5 @@
 
-import foodListData from './food_list.json'; 
+import foodListData from './food_list.json';
 import basket_icon from './basket_icon.png'
 import logo from './logo.png'
 import header_img from './header_img.png'
@@ -158,19 +158,25 @@ export const menu_list = [
         menu_image: menu_8
     }]
 
-    const categories = menu_list.map(menu => menu.menu_name);
-    const getRandomCategory = (categories) => categories[Math.floor(Math.random() * categories.length)];
+const categories = menu_list.map(menu => menu.menu_name);
+const getRandomCategory = (categories) => categories[Math.floor(Math.random() * categories.length)];
+
+const imageKeys = Object.keys(imageMapping);
+const getRandomImage = () => {
+    const randomIndex = Math.floor(Math.random() * imageKeys.length);
+    const randomKey = imageKeys[randomIndex];
+    return imageMapping[randomKey];
+};
 
 
 
-    export const food_list = foodListData.map((name, index) => ({   
-        _id: (index + 1).toString(),
-        name: name,
-        image: imageMapping[index + 1] || food_1,
-        price: getRandomPrice(12,18),
-        description: "UCLA's "+name + " is the best " + name + " in all of America's college dining halls.",
-        category: getRandomCategory(categories)
-    }));        
+export const food_list = foodListData.map((name, index) => ({
+    _id: (index + 1).toString(),
+    name: name,
+    image: imageMapping[index + 1] || getRandomImage(),
+    price: getRandomPrice(12, 18),
+    description: "UCLA's " + name + " is the best " + name + " in all of America's college dining halls.",
+    category: getRandomCategory(categories)
+}));
 
 
-   
