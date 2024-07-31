@@ -13,7 +13,7 @@ import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
 import cross_icon from './cross_icon.png'
-import rating_starts from './rating_starts.png'
+import rating_stars from './rating_stars.png'
 
 const getRandomPrice = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -21,7 +21,7 @@ export const assets = {
     logo,
     basket_icon,
     header_img,
-    rating_starts,
+    rating_stars,
     add_icon_green,
     add_icon_white,
     remove_icon_red,
