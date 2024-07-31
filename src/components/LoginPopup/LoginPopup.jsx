@@ -22,8 +22,6 @@ const [currState,setCurrState] = useState("Login")
         </div>
         <button>{currState==="Sign Up"?"Create Account":"Login"}</button>
         <div className="login-popup-condition">
-            <input type="checkbox" required/>
-            <p>Go Sun Devils</p>
         </div>
         {currState==="Login"
         ? <p className="pointer">Create a new account? <span onClick={()=>setCurrState("Sign Up")}>Click here</span></p >:
