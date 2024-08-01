@@ -51,7 +51,7 @@ export const food_list = foodListData.map((item, index) => ({
     _id: (index + 1).toString(),
     name: item.name,
     image: index < foodListData.length/2 ? food_1 : food_2,
-    price: getRandomPrice(6, 11),
+    price: getRandomPrice(6, 9),
     description: "UCLA's " + item.name + " is the best " + item.name + " in all of America's college dining halls.",
     category: item.tag === "V" ? "Vegetarian" : item.tag === "VG" ? "Vegan" : "Non-Veg"
 }));
